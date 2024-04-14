@@ -1,6 +1,6 @@
 {
-  "homepage": "https://charlesomane.github.io/weather-app-react",
-  "name": "weather-app-react",
+  "homepage": "https://charlesomane.github.io/weather-App",
+  "name": "weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,11 +15,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh": "^2.8.9",
+    "gh-pages": "^6.1.1",
+    "pages": "^0.0.16"
   }
 }
